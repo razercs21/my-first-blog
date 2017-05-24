@@ -5,6 +5,5 @@
     <form method="POST" class="post-form">{% csrf_token %}
         	Are you sure you want to delete "{{ form.title }}"?
         	<button type="submit" class="save btn btn-default">Delete</button>
-        	<button href="javascript:history.go(1)" class="save btn btn-default">Back</button>
     </form>
 {% endblock %}
