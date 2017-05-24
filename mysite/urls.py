@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 	url(r'blog', include('blog.urls', namespace='blog')),
 	url(r'cursos', include('courses.urls', namespace='courses')),
+	url(r'libros', include('books.urls', namespace='books')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
