@@ -1,0 +1,10 @@
+{% extends 'seleccion/base.html' %}
+
+{% block content %}
+    {% for futbolista in object_list %}
+        <div class="post">
+            <h1><a href="{% url 'seleccion:edit' pk=futbolista.pk %}">{{ futbolista.title }}</a></h1>
+            <p>{{ futbolista.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}

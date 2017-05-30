@@ -1,0 +1,8 @@
+{% extends 'seleccion/base.html' %}
+
+<h1>{{ seleccion.title }}</h1>
+<p>Fecha de inicio: <i>{{ futbolista.text }}</i></p>
+<p>Fecha de fin: <i>{{ futbolista.created_date }}</i></p>
+<p>
+    <a href="{% url "seleccion:list" %}">Regresar</a>
+</p>

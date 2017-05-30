@@ -1,0 +1,10 @@
+{% extends 'seleccion/base.html' %}
+
+{% block content %}
+	<h1>Editar Futbolista</h1>
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <a class="btn btn-default" href="{% url 'seleccion:delete' pk=futbolista.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+        	{{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Guardar</button>
+    </form>
+{% endblock %}

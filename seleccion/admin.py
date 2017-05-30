@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from servers.models import Server
-
+from .models import Futbolista
 # Register your models here.
-admin.site.register(Server)
+admin.site.register(Futbolista)
