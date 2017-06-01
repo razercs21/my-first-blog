@@ -9,16 +9,34 @@
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'seleccion:new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="{% url 'seleccion:list' %}">Selección Peruana de Fútbol</a></h1>
-        </div>
-        <div class="content container">
             <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
+                <div class="col-md-4">
+                    <img src="http://127.0.0.1:8000/media/media/courses/pictures/escudo.jpg" id="escudo" style="width: 170px!important; height: 90px!important">
+                </div>
+                <div class="col-md-6">
+                    <h1><a href="{% url 'seleccion:list' %}">Selección Peruana de Fútbol</a></h1>
+                </div>
+                <div class="col-md-2">
+                    <a href="{% url 'seleccion:new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 </div>
             </div>
         </div>
+        <div class="row" id="fondo">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="col-md-6">
+                <br><br><br><br>
+                <img src="http://127.0.0.1:8000/media/media/courses/pictures/seleccion-peruana.jpg" id="escudo" style="width: 750px!important; height: 500px!important">
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
     </body>
+
 </html>
