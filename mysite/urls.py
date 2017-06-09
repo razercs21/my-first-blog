@@ -8,4 +8,5 @@ urlpatterns = [
 	url(r'blog', include('blog.urls', namespace='blog')),
 	url(r'cursos', include('courses.urls', namespace='courses')),
 	url(r'seleccion', include('seleccion.urls', namespace='seleccion')),
+	url(r'acciones', include('acciones.urls', namespace='acciones')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

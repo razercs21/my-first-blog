@@ -1,0 +1,27 @@
+#minsa {
+    margin-top: 25px !important;
+}
+
+.card-panel.teal.lighten-2 {
+    background-color: #309fde !important;
+    color: #fff !important;
+}
+
+.waves-effect.waves-light.btn-large {
+    background-color: #309fde !important;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+}
+
+.page-header {
+    background-color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0 0px !important;
+}
+
+.button {
+    text-align: right !important;
+}
